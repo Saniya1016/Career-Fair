@@ -16,7 +16,7 @@ This project is a full-stack Career Fair application designed to manage and stre
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/career-fair-application.git
+   git clone https://github.com/Saniya1016/Career-Fair.git
    ```
 
 2. **Install Dependencies**:
