@@ -1,0 +1,79 @@
+version: '3.9'
+services:
+  company-client:
+    build: ./company-client
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./company-client:/usr/app
+      - /usr/app/build
+      - /usr/app/node_modules
+  
+  student-client:
+    build: ./student-client
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./student-client:/usr/app
+      - /usr/app/build
+      - /usr/app/node_modules
+
+  company:
+    build: ./company
+    ports:
+      - '4001:4001'
+    volumes:
+      - ./company:/usr/app
+      - /usr/app/node_modules
+  
+  student:
+    build: ./student
+    ports:
+      - '4002:4002'
+    volumes:
+      - ./student:/usr/app
+      - /usr/app/node_modules
+
+  queue-company:
+    build: ./queue-company
+    ports:
+      - '4003:4003'
+    volumes:
+      - ./queue-company:/usr/app
+      - /usr/app/node_modules
+
+  queue-student:
+    build: ./queue-student
+    ports:
+      - '4004:4004'
+    volumes:
+      - ./queue-student:/usr/app
+      - /usr/app/node_modules
+
+  event-bus:
+    build: ./event-bus
+    ports:
+      - '4005:4005'
+    volumes:
+      - ./event-bus:/usr/app
+      - /usr/app/node_modules
+
+  manager:
+    build: ./manager
+    ports:
+      - '4006:4006'
+    volumes:
+      - ./manager:/usr/app
+      - /usr/app/node_modules
+
+  company-db:
+    image: mongo:latest
+    volumes:
+      - company-data:/data/db
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: saniyasingh
+      MONGO_INITDB_ROOT_PASSWORD: oWJfok7lOy9A1WBs
+
+volumes:
+  company-data:

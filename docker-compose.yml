@@ -1,0 +1,41 @@
+version: '3.9'
+services:
+  company-client:
+    build: ./company-client
+    ports:
+      - '3001:3001'
+  
+  student-client:
+    build: ./student-client
+    ports:
+      - '3000:3000'
+
+  company:
+    build: ./company
+    ports:
+      - '4001:4001'
+  
+  student:
+    build: ./student
+    ports:
+      - '4002:4002'
+
+  queue-company:
+    build: ./queue-company
+    ports:
+      - '4003:4003'
+
+  queue-student:
+    build: ./queue-student
+    ports:
+      - '4004:4004'
+
+  event-bus:
+    build: ./event-bus
+    ports:
+      - '4005:4005'
+
+  manager:
+    build: ./manager
+    ports:
+      - '4006:4006'
