@@ -4,6 +4,11 @@
 
 This project is a full-stack Career Fair application designed to manage and streamline online queues using a micro-service architecture. It enables real-time interactions between job seekers and recruiters, optimizing the experience for career fairs.
 
+## Checkout the Live Demo
+
+Filename: 426-Final.mp4
+
+
 ## Features
 
 - **Micro-Service Architecture**: Engineered a scalable and maintainable system using micro-services.
