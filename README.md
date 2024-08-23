@@ -32,5 +32,3 @@ This project is a full-stack Career Fair application designed to manage and stre
 
 
 ---
-
-Replace `your-username` with your GitHub username and customize any other details as needed.
