@@ -17,23 +17,5 @@ Filename: 426-Final.mp4
 - **Dynamic Front-End**: Designed intuitive and responsive client interfaces using Svelte and Bootstrap CSS for a modern user experience.
 - **Containerization with Docker**: Utilized Docker to containerize micro-services, facilitating scalable and reliable deployment.
 
-## Getting Started
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Saniya1016/Career-Fair.git
-   ```
-
-2. **Install Dependencies**:
-   - For the back-end: Navigate to the back-end directory and run `npm install`.
-   - For the front-end: Navigate to the front-end directory and run `npm install`.
-
-3. **Run the Application**:
-   - Start the back-end services.
-   - Start the front-end client.
-
-4. **Access the Application**:
-   - Open your browser and navigate to the application URL provided by your setup.
-
 
 ---
